@@ -1,0 +1,9 @@
+C:\Users\phili\source\repos\lab2lib\lab2lib\bin\Debug\netstandard2.0\lab2lib.deps.json
+C:\Users\phili\source\repos\lab2lib\lab2lib\bin\Debug\netstandard2.0\lab2lib.dll
+C:\Users\phili\source\repos\lab2lib\lab2lib\obj\Debug\netstandard2.0\lab2lib.csprojAssemblyReference.cache
+C:\Users\phili\source\repos\lab2lib\lab2lib\obj\Debug\netstandard2.0\lab2lib.AssemblyInfoInputs.cache
+C:\Users\phili\source\repos\lab2lib\lab2lib\obj\Debug\netstandard2.0\lab2lib.AssemblyInfo.cs
+C:\Users\phili\source\repos\lab2lib\lab2lib\bin\Debug\netstandard2.0\lab2lib.pdb
+C:\Users\phili\source\repos\lab2lib\lab2lib\obj\Debug\netstandard2.0\lab2lib.csproj.CoreCompileInputs.cache
+C:\Users\phili\source\repos\lab2lib\lab2lib\obj\Debug\netstandard2.0\lab2lib.dll
+C:\Users\phili\source\repos\lab2lib\lab2lib\obj\Debug\netstandard2.0\lab2lib.pdb
