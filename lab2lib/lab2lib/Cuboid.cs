@@ -7,37 +7,61 @@ namespace lab2lib
 {
     public class Cuboid : Shape3d
     {
-        private Vector3 _size;
-        private Vector3 _center;
+        private float width;
+        private Vector3 center;
+        private Vector3 size;
+        private readonly bool _isCube = false;
+
+        private float h;
+        private float w;
+        private float l;
+
         public Cuboid(Vector3 center, Vector3 size)
         {
-            _center = center;
-            _size = size;
-        }
 
-        public override float Volume
-        {
-            get
+            this.center = center;
+            this.size = size;
+
+            h = size.X;
+            w = size.Y;
+            l = size.Z;
+
+            if (h == w && h == l)
             {
-                return _size.X * _size.Y *_size.Z;
+                _isCube = true;
             }
         }
 
-        public override Vector3 Center => throw new NotImplementedException();
+        public Cuboid(Vector3 center, float width)
+        {
+            _isCube = true;
+            this.center = center;
+            this.width = width;
+            size = new Vector3(width);
+            h = size.X;
+            w = size.Y;
+            l = size.Z;
+        }
+
+        public bool IsCube
+        {
+            get => _isCube;
+        }
+
+        public override float Volume => h * w * l;
+
+        public override Vector3 Center => center;
+
+        public override float Area => 2 * (l * w + l * h + w * h);
 
         public override string ToString()
         {
-            return CheckSize() + _center.ToString() + " w= " + _size.X + " h= " + _size.Y + " l=" + _size.Z;
+            if (IsCube)
+            {
+                return $"Cube @({center.X:0.00}, {center.Y:0.00}, {center.Z:0.00}): w = {width:0.00}, h = {width:0.00}, l = {width:0.00}";
+            }
+            else
+                return $"Cuboid @({center.X:0.00}, {center.Y:0.00}, {center.Z:0.00}): w = {w:0.00}, h = {h:0.00}, l = {l:0.00}";
         }
-
-        private string CheckSize()
-        {
-            if (_size.X == _size.Y && _size.X == _size.Z && _size.Y == _size.Z) 
-                return "Cube @:";
-
-            return "Cuboid @:";
-        }
-        public override float Area => throw new NotImplementedException();
-        
     }
 }

@@ -6,9 +6,6 @@ namespace lab2lib
 {
     public abstract class Shape3d : Shape
     {
-        readonly float x;
-        readonly float y;
-        readonly float z;
         public abstract float Volume { get; }
     }
 }

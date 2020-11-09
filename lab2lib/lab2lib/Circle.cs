@@ -36,7 +36,7 @@ namespace lab2lib
 
         public override string ToString()
         {
-            return "Circle @:" + _center.ToString() + "r:" + _radius;
+            return $"Circle @({_center.X}, {_center.Y}): R = {_radius:0.00}";
         }
     }
 }
